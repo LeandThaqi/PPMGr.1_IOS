@@ -29,6 +29,9 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func shkoTe2(_ sender: UIButton) {
+        performSegue(withIdentifier: "testingsamsing", sender: self)
+    }
     
 }
 

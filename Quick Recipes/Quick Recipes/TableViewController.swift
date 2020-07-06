@@ -1,15 +1,27 @@
 //
-//  SecondViewController.swift
+//  TableViewController.swift
 //  Quick Recipes
 //
-//  Created by Leand Thaqi on 5.7.20.
+//  Created by Leand Thaqi on 6.7.20.
 //  Copyright © 2020 Leand Thaqi. All rights reserved.
 //
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class TableViewController: UIViewController {
+    //UITableViewDelegate,UITableViewDataSource
+    
+    /*
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    */
 
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

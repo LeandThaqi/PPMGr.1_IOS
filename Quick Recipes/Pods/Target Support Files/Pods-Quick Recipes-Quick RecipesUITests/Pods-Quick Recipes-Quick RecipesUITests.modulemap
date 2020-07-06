@@ -1,0 +1,6 @@
+framework module Pods_Quick_Recipes_Quick_RecipesUITests {
+  umbrella header "Pods-Quick Recipes-Quick RecipesUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

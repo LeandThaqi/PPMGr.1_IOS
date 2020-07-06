@@ -15,42 +15,135 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Se-uA-dtW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Se-uA-dtW">
                                 <rect key="frame" x="43" y="324" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="v6C-4b-PZK"/>
+                                    <constraint firstAttribute="width" constant="150" id="zYQ-U8-MZj"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="90"/>
                                 <state key="normal" title="Main Dishes" backgroundImage="icon_main_dishes.png"/>
+                                <connections>
+                                    <action selector="shkoTe2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7WB-BW-f4K"/>
+                                    <segue destination="GVJ-O8-AKS" kind="modal" identifier="testingsamsing" modalPresentationStyle="fullScreen" id="k00-dg-nVw"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9W-Ap-58H">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9W-Ap-58H">
                                 <rect key="frame" x="232" y="352" width="135" height="135"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="0uI-l2-1d3"/>
+                                    <constraint firstAttribute="height" constant="135" id="Ei7-rA-mgV"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="130"/>
                                 <state key="normal" title="Healthy" backgroundImage="icon_healthy.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5f-Gw-af9">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5f-Gw-af9">
                                 <rect key="frame" x="43" y="539" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="UKO-yv-EEH"/>
+                                    <constraint firstAttribute="height" constant="150" id="kBE-yQ-mqM"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="150"/>
                                 <state key="normal" title="Desserts" backgroundImage="icon_desserts.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Rm-v9-xiR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Rm-v9-xiR">
                                 <rect key="frame" x="232" y="543" width="140" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="TSJ-Tk-vSm"/>
+                                    <constraint firstAttribute="width" constant="140" id="foW-2z-8is"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="150"/>
                                 <state key="normal" title="Drinks" backgroundImage="icon_drinks.png"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="O9W-Ap-58H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="308" id="02T-mQ-BkG"/>
+                            <constraint firstItem="8Rm-v9-xiR" firstAttribute="top" secondItem="O9W-Ap-58H" secondAttribute="bottom" constant="56" id="ELz-JO-orF"/>
+                            <constraint firstItem="O9W-Ap-58H" firstAttribute="leading" secondItem="1Se-uA-dtW" secondAttribute="trailing" constant="39" id="GO3-P0-kwe"/>
+                            <constraint firstItem="1Se-uA-dtW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="Pni-5T-OHS"/>
+                            <constraint firstItem="1Se-uA-dtW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="280" id="e0G-2W-vOc"/>
+                            <constraint firstItem="8Rm-v9-xiR" firstAttribute="leading" secondItem="k5f-Gw-af9" secondAttribute="trailing" constant="39" id="f7O-JX-V0B"/>
+                            <constraint firstItem="k5f-Gw-af9" firstAttribute="top" secondItem="1Se-uA-dtW" secondAttribute="bottom" constant="65" id="uZ8-O2-6kS"/>
+                            <constraint firstItem="k5f-Gw-af9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="xoI-6E-cBp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="976.81159420289862" y="88.392857142857139"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="AVz-bA-CbF">
+            <objects>
+                <viewController id="4j9-yC-fZw" customClass="TableViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="osR-3N-U0f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Pg-cW-Whu">
+                                <rect key="frame" x="0.0" y="78" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0Pg-cW-Whu" firstAttribute="top" secondItem="hdl-4h-WKr" secondAttribute="top" id="8LB-Ah-tTo"/>
+                            <constraint firstItem="hdl-4h-WKr" firstAttribute="bottom" secondItem="0Pg-cW-Whu" secondAttribute="bottom" id="X4n-Bp-1ZR"/>
+                            <constraint firstItem="hdl-4h-WKr" firstAttribute="trailing" secondItem="0Pg-cW-Whu" secondAttribute="trailing" id="p2i-9H-8lf"/>
+                            <constraint firstItem="0Pg-cW-Whu" firstAttribute="leading" secondItem="hdl-4h-WKr" secondAttribute="leading" id="xOJ-j9-xgF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hdl-4h-WKr"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3EU-za-cqQ"/>
+                    <connections>
+                        <outlet property="tableView" destination="0Pg-cW-Whu" id="SpK-uF-Cnq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DlK-5U-nSa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2113" y="-127"/>
+        </scene>
+        <!--Test Controller-->
+        <scene sceneID="zo1-vv-RSL">
+            <objects>
+                <viewController id="GVJ-O8-AKS" customClass="testController" customModule="Quick_Recipes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Ej-d4-AyF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXp-IE-D57">
+                                <rect key="frame" x="66" y="205" width="230" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdU-Xe-kf4">
+                                <rect key="frame" x="158" y="449" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="test:" destination="GVJ-O8-AKS" eventType="touchUpInside" id="sCv-n3-a0P"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="KvR-6v-xWP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XxY-N3-4Hs"/>
+                    <connections>
+                        <outlet property="labela" destination="WXp-IE-D57" id="00d-1Q-FnV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vvv-y6-tV1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2089.8550724637685" y="531.69642857142856"/>
         </scene>
     </scenes>
     <resources>

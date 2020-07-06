@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		089A98083BEB062AD1F131DD /* Pods_Quick_RecipesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F620751E9AA06498F7B80FB /* Pods_Quick_RecipesTests.framework */; };
+		94F08A66E4B60E0B55E162BD /* Pods_Quick_Recipes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663101F6DC464309302B0934 /* Pods_Quick_Recipes.framework */; };
+		CB316C7824B3AD49005F3603 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB316C7724B3AD49005F3603 /* TableViewController.swift */; };
+		CB316C7B24B3AEC4005F3603 /* FillDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB316C7A24B3AEC4005F3603 /* FillDatabase.swift */; };
+		CB316C7E24B3B517005F3603 /* french-chicken.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CB316C7C24B3B517005F3603 /* french-chicken.jpeg */; };
+		CB316C7F24B3B517005F3603 /* chicken-parmesan.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CB316C7D24B3B517005F3603 /* chicken-parmesan.jpeg */; };
+		CB316C8224B3B596005F3603 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB316C8124B3B596005F3603 /* RecipeModel.swift */; };
+		CB316C8424B3BD88005F3603 /* testController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB316C8324B3BD88005F3603 /* testController.swift */; };
 		CB55917824B24B5A00D9D1C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB55917724B24B5A00D9D1C2 /* AppDelegate.swift */; };
 		CB55917A24B24B5A00D9D1C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB55917924B24B5A00D9D1C2 /* SceneDelegate.swift */; };
 		CB55917C24B24B5A00D9D1C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB55917B24B24B5A00D9D1C2 /* ViewController.swift */; };
@@ -20,6 +28,7 @@
 		CB5591B124B255F200D9D1C2 /* icon_healthy.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5591AC24B255F200D9D1C2 /* icon_healthy.png */; };
 		CB5591B224B255F200D9D1C2 /* icon_drinks.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5591AD24B255F200D9D1C2 /* icon_drinks.png */; };
 		CB5591B324B255F200D9D1C2 /* background_main.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5591AE24B255F200D9D1C2 /* background_main.png */; };
+		E091FCDD702DF6A71DCA3215 /* Pods_Quick_Recipes_Quick_RecipesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F6D0B9FD77C90BF4C622C2 /* Pods_Quick_Recipes_Quick_RecipesUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +49,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01387D83CC33C995B0F0AF9E /* Pods-Quick Recipes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Recipes.release.xcconfig"; path = "Target Support Files/Pods-Quick Recipes/Pods-Quick Recipes.release.xcconfig"; sourceTree = "<group>"; };
+		25F6D0B9FD77C90BF4C622C2 /* Pods_Quick_Recipes_Quick_RecipesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quick_Recipes_Quick_RecipesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38A863121EECD326D7FE2FDC /* Pods-Quick RecipesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick RecipesTests.debug.xcconfig"; path = "Target Support Files/Pods-Quick RecipesTests/Pods-Quick RecipesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4184244824AE0AC4F18E16C8 /* Pods-Quick Recipes-Quick RecipesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Recipes-Quick RecipesUITests.debug.xcconfig"; path = "Target Support Files/Pods-Quick Recipes-Quick RecipesUITests/Pods-Quick Recipes-Quick RecipesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		49274C2E43500EB67EA96B29 /* Pods-Quick Recipes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Recipes.debug.xcconfig"; path = "Target Support Files/Pods-Quick Recipes/Pods-Quick Recipes.debug.xcconfig"; sourceTree = "<group>"; };
+		49446B5F49806E22CBEAB065 /* Pods-Quick RecipesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick RecipesTests.release.xcconfig"; path = "Target Support Files/Pods-Quick RecipesTests/Pods-Quick RecipesTests.release.xcconfig"; sourceTree = "<group>"; };
+		663101F6DC464309302B0934 /* Pods_Quick_Recipes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quick_Recipes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F620751E9AA06498F7B80FB /* Pods_Quick_RecipesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quick_RecipesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8B7FC81D14BD2FACD7C3C1F /* Pods-Quick Recipes-Quick RecipesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Recipes-Quick RecipesUITests.release.xcconfig"; path = "Target Support Files/Pods-Quick Recipes-Quick RecipesUITests/Pods-Quick Recipes-Quick RecipesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CB316C7724B3AD49005F3603 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		CB316C7A24B3AEC4005F3603 /* FillDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillDatabase.swift; sourceTree = "<group>"; };
+		CB316C7C24B3B517005F3603 /* french-chicken.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "french-chicken.jpeg"; path = "../../../../../Desktop/french-chicken.jpeg"; sourceTree = "<group>"; };
+		CB316C7D24B3B517005F3603 /* chicken-parmesan.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "chicken-parmesan.jpeg"; path = "../../../../../Desktop/chicken-parmesan.jpeg"; sourceTree = "<group>"; };
+		CB316C8124B3B596005F3603 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		CB316C8324B3BD88005F3603 /* testController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testController.swift; sourceTree = "<group>"; };
 		CB55917424B24B5A00D9D1C2 /* Quick Recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quick Recipes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB55917724B24B5A00D9D1C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB55917924B24B5A00D9D1C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94F08A66E4B60E0B55E162BD /* Pods_Quick_Recipes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				089A98083BEB062AD1F131DD /* Pods_Quick_RecipesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +106,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E091FCDD702DF6A71DCA3215 /* Pods_Quick_Recipes_Quick_RecipesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6FBD20DF54DA40A9E2CB4B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				663101F6DC464309302B0934 /* Pods_Quick_Recipes.framework */,
+				25F6D0B9FD77C90BF4C622C2 /* Pods_Quick_Recipes_Quick_RecipesUITests.framework */,
+				8F620751E9AA06498F7B80FB /* Pods_Quick_RecipesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB316C7924B3AE78005F3603 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				CB316C7A24B3AEC4005F3603 /* FillDatabase.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		CB316C8024B3B528005F3603 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				CB316C8124B3B596005F3603 /* RecipeModel.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
 		CB55916B24B24B5A00D9D1C2 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +146,8 @@
 				CB55918D24B24B5B00D9D1C2 /* Quick RecipesTests */,
 				CB55919824B24B5B00D9D1C2 /* Quick RecipesUITests */,
 				CB55917524B24B5A00D9D1C2 /* Products */,
+				F9249501129E4C1123E7F416 /* Pods */,
+				B6FBD20DF54DA40A9E2CB4B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,14 +164,18 @@
 		CB55917624B24B5A00D9D1C2 /* Quick Recipes */ = {
 			isa = PBXGroup;
 			children = (
+				CB316C8024B3B528005F3603 /* models */,
+				CB316C7924B3AE78005F3603 /* utils */,
 				CB5591A924B2557700D9D1C2 /* resources */,
 				CB55917724B24B5A00D9D1C2 /* AppDelegate.swift */,
 				CB55917924B24B5A00D9D1C2 /* SceneDelegate.swift */,
 				CB55917B24B24B5A00D9D1C2 /* ViewController.swift */,
+				CB316C7724B3AD49005F3603 /* TableViewController.swift */,
 				CB55917D24B24B5A00D9D1C2 /* Main.storyboard */,
 				CB55918024B24B5B00D9D1C2 /* Assets.xcassets */,
 				CB55918224B24B5B00D9D1C2 /* LaunchScreen.storyboard */,
 				CB55918524B24B5B00D9D1C2 /* Info.plist */,
+				CB316C8324B3BD88005F3603 /* testController.swift */,
 			);
 			path = "Quick Recipes";
 			sourceTree = "<group>";
@@ -142,6 +201,8 @@
 		CB5591A924B2557700D9D1C2 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				CB316C7D24B3B517005F3603 /* chicken-parmesan.jpeg */,
+				CB316C7C24B3B517005F3603 /* french-chicken.jpeg */,
 				CB5591AE24B255F200D9D1C2 /* background_main.png */,
 				CB5591AB24B255F200D9D1C2 /* icon_desserts.png */,
 				CB5591AD24B255F200D9D1C2 /* icon_drinks.png */,
@@ -151,6 +212,19 @@
 			name = resources;
 			sourceTree = "<group>";
 		};
+		F9249501129E4C1123E7F416 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49274C2E43500EB67EA96B29 /* Pods-Quick Recipes.debug.xcconfig */,
+				01387D83CC33C995B0F0AF9E /* Pods-Quick Recipes.release.xcconfig */,
+				4184244824AE0AC4F18E16C8 /* Pods-Quick Recipes-Quick RecipesUITests.debug.xcconfig */,
+				B8B7FC81D14BD2FACD7C3C1F /* Pods-Quick Recipes-Quick RecipesUITests.release.xcconfig */,
+				38A863121EECD326D7FE2FDC /* Pods-Quick RecipesTests.debug.xcconfig */,
+				49446B5F49806E22CBEAB065 /* Pods-Quick RecipesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB55919E24B24B5B00D9D1C2 /* Build configuration list for PBXNativeTarget "Quick Recipes" */;
 			buildPhases = (
+				885FBB5099C12BBF37162CD0 /* [CP] Check Pods Manifest.lock */,
 				CB55917024B24B5A00D9D1C2 /* Sources */,
 				CB55917124B24B5A00D9D1C2 /* Frameworks */,
 				CB55917224B24B5A00D9D1C2 /* Resources */,
+				1622D633F4B809C2BBE85F78 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,6 +251,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB5591A124B24B5B00D9D1C2 /* Build configuration list for PBXNativeTarget "Quick RecipesTests" */;
 			buildPhases = (
+				92D9B1EF365367B9C853EDB5 /* [CP] Check Pods Manifest.lock */,
 				CB55918624B24B5B00D9D1C2 /* Sources */,
 				CB55918724B24B5B00D9D1C2 /* Frameworks */,
 				CB55918824B24B5B00D9D1C2 /* Resources */,
@@ -193,9 +270,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB5591A424B24B5B00D9D1C2 /* Build configuration list for PBXNativeTarget "Quick RecipesUITests" */;
 			buildPhases = (
+				AD76BB31815984D3D43FAF6B /* [CP] Check Pods Manifest.lock */,
 				CB55919124B24B5B00D9D1C2 /* Sources */,
 				CB55919224B24B5B00D9D1C2 /* Frameworks */,
 				CB55919324B24B5B00D9D1C2 /* Resources */,
+				82F17B805A5360D57788DA00 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB316C7F24B3B517005F3603 /* chicken-parmesan.jpeg in Resources */,
 				CB5591B124B255F200D9D1C2 /* icon_healthy.png in Resources */,
 				CB55918424B24B5B00D9D1C2 /* LaunchScreen.storyboard in Resources */,
 				CB5591B324B255F200D9D1C2 /* background_main.png in Resources */,
@@ -263,6 +343,7 @@
 				CB55917F24B24B5A00D9D1C2 /* Main.storyboard in Resources */,
 				CB5591AF24B255F200D9D1C2 /* icon_main_dishes.png in Resources */,
 				CB5591B024B255F200D9D1C2 /* icon_desserts.png in Resources */,
+				CB316C7E24B3B517005F3603 /* french-chicken.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +363,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1622D633F4B809C2BBE85F78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quick Recipes/Pods-Quick Recipes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quick Recipes/Pods-Quick Recipes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Quick Recipes/Pods-Quick Recipes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82F17B805A5360D57788DA00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quick Recipes-Quick RecipesUITests/Pods-Quick Recipes-Quick RecipesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Quick Recipes-Quick RecipesUITests/Pods-Quick Recipes-Quick RecipesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Quick Recipes-Quick RecipesUITests/Pods-Quick Recipes-Quick RecipesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		885FBB5099C12BBF37162CD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quick Recipes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92D9B1EF365367B9C853EDB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quick RecipesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD76BB31815984D3D43FAF6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quick Recipes-Quick RecipesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CB55917024B24B5A00D9D1C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -289,7 +473,11 @@
 			files = (
 				CB55917C24B24B5A00D9D1C2 /* ViewController.swift in Sources */,
 				CB55917824B24B5A00D9D1C2 /* AppDelegate.swift in Sources */,
+				CB316C8424B3BD88005F3603 /* testController.swift in Sources */,
 				CB55917A24B24B5A00D9D1C2 /* SceneDelegate.swift in Sources */,
+				CB316C7824B3AD49005F3603 /* TableViewController.swift in Sources */,
+				CB316C7B24B3AEC4005F3603 /* FillDatabase.swift in Sources */,
+				CB316C8224B3B596005F3603 /* RecipeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +648,7 @@
 		};
 		CB55919F24B24B5B00D9D1C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49274C2E43500EB67EA96B29 /* Pods-Quick Recipes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -477,6 +666,7 @@
 		};
 		CB5591A024B24B5B00D9D1C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01387D83CC33C995B0F0AF9E /* Pods-Quick Recipes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -494,6 +684,7 @@
 		};
 		CB5591A224B24B5B00D9D1C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38A863121EECD326D7FE2FDC /* Pods-Quick RecipesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +706,7 @@
 		};
 		CB5591A324B24B5B00D9D1C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49446B5F49806E22CBEAB065 /* Pods-Quick RecipesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -536,6 +728,7 @@
 		};
 		CB5591A524B24B5B00D9D1C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4184244824AE0AC4F18E16C8 /* Pods-Quick Recipes-Quick RecipesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -555,6 +748,7 @@
 		};
 		CB5591A624B24B5B00D9D1C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8B7FC81D14BD2FACD7C3C1F /* Pods-Quick Recipes-Quick RecipesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
