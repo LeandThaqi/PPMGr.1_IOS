@@ -7,23 +7,34 @@
 //
 
 import UIKit
+import RealmSwift
 
-class TableViewController: UIViewController {
-    //UITableViewDelegate,UITableViewDataSource
+class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
+    @IBOutlet weak var table: UITableView!
+    let realm = try! Realm()
+    var recipes:Results<Recipe>!
     
-    /*
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return recipes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let row=indexPath.row
+        let customCell = tableView.dequeueReusableCell(withIdentifier: MyTableViewCell.identifier, for: indexPath) as! MyTableViewCell
+        customCell.configure(with: recipes[row].name, imgFood: recipes[row].imagePath, time: recipes[row].timeNeeded,
+                             imgTime:"ic_access_time_18pt.png", persons:recipes[row].persons, imgPersons: "ic_people_12pt_2x.png")
+        return customCell
     }
-    */
+    
 
-    @IBOutlet weak var tableView: UITableView!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
+        //recipes=realm.objects(Recipe.self)
+        table.register(MyTableViewCell.nib(), forCellReuseIdentifier: MyTableViewCell.identifier)
+        table.delegate=self
+        table.dataSource=self
 
         // Do any additional setup after loading the view.
     }

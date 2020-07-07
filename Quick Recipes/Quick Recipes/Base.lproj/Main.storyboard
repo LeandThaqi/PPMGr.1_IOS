@@ -26,18 +26,8 @@
                                 <state key="normal" title="Main Dishes" backgroundImage="icon_main_dishes.png"/>
                                 <connections>
                                     <action selector="shkoTe2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7WB-BW-f4K"/>
-                                    <segue destination="GVJ-O8-AKS" kind="modal" identifier="testingsamsing" modalPresentationStyle="fullScreen" id="k00-dg-nVw"/>
+                                    <segue destination="4j9-yC-fZw" kind="modal" identifier="showTableView" modalPresentationStyle="fullScreen" id="V93-em-SR4"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9W-Ap-58H">
-                                <rect key="frame" x="232" y="352" width="135" height="135"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="135" id="0uI-l2-1d3"/>
-                                    <constraint firstAttribute="height" constant="135" id="Ei7-rA-mgV"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="130"/>
-                                <state key="normal" title="Healthy" backgroundImage="icon_healthy.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5f-Gw-af9">
                                 <rect key="frame" x="43" y="539" width="150" height="150"/>
@@ -58,6 +48,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="150"/>
                                 <state key="normal" title="Drinks" backgroundImage="icon_drinks.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9W-Ap-58H">
+                                <rect key="frame" x="232" y="352" width="135" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="0uI-l2-1d3"/>
+                                    <constraint firstAttribute="height" constant="135" id="Ei7-rA-mgV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="130"/>
+                                <state key="normal" title="Healthy" backgroundImage="icon_healthy.png"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -102,7 +102,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="3EU-za-cqQ"/>
                     <connections>
-                        <outlet property="tableView" destination="0Pg-cW-Whu" id="SpK-uF-Cnq"/>
+                        <outlet property="table" destination="0Pg-cW-Whu" id="Sm4-Ef-SD4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DlK-5U-nSa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

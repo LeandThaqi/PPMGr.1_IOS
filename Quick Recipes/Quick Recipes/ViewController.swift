@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         view.insertSubview(imageView, at: 0)
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -30,7 +31,7 @@ class ViewController: UIViewController {
 
 
     @IBAction func shkoTe2(_ sender: UIButton) {
-        performSegue(withIdentifier: "testingsamsing", sender: self)
+        performSegue(withIdentifier: "showTableView", sender: self)
     }
     
 }
