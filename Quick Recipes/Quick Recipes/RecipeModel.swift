@@ -16,5 +16,6 @@ class Recipe: Object {
     @objc dynamic var instructions=""
     @objc dynamic var timeNeeded=""
     @objc dynamic var persons=""
+    @objc dynamic var category=""
 }
 	

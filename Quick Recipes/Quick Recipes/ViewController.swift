@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+   
     
     var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
@@ -19,6 +20,7 @@ class ViewController: UIViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
+        //FillDatabase().fillDatabase()
         
         view.insertSubview(imageView, at: 0)
         NSLayoutConstraint.activate([
