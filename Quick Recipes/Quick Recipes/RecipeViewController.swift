@@ -17,8 +17,8 @@ class RecipeViewController: UIViewController {
     @IBOutlet weak var lblTime: UILabel!
     @IBOutlet weak var imageViewPersons: UIImageView!
     @IBOutlet weak var lblPersons: UILabel!
-    @IBOutlet weak var lblIngredients: UILabel!
-    @IBOutlet weak var lblInstructions: UILabel!
+    @IBOutlet weak var txtViewInstructions: UITextView!
+    @IBOutlet weak var txtViewIngredients: UITextView!
     
     var receivedName=""
     
@@ -51,10 +51,9 @@ class RecipeViewController: UIViewController {
         imageViewPersons.image=UIImage(named:"ic_people_12pt_2x.png")
         lblTime.text=recipe[0].timeNeeded
         lblPersons.text=recipe[0].persons
-        lblIngredients.text=recipe[0].ingredients
-        lblInstructions.text=recipe[0].instructions
-        lblInstructions.sizeToFit()
-        lblIngredients.sizeToFit()
+        txtViewIngredients.text=recipe[0].ingredients
+        txtViewInstructions.text=recipe[0].instructions
+       
         
         // Do any additional setup after loading the view.
     }
