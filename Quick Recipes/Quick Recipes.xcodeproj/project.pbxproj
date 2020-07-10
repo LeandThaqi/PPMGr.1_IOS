@@ -20,6 +20,13 @@
 		2D66701A24B5074200A82BD0 /* ic_people_12pt_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D66701924B5074200A82BD0 /* ic_people_12pt_2x.png */; };
 		2D66701C24B5074F00A82BD0 /* ic_access_time_18pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D66701B24B5074E00A82BD0 /* ic_access_time_18pt.png */; };
 		94F08A66E4B60E0B55E162BD /* Pods_Quick_Recipes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663101F6DC464309302B0934 /* Pods_Quick_Recipes.framework */; };
+		CB2715A324B8FE5200DC7130 /* Grilled-Salmon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB2715A024B8FE5200DC7130 /* Grilled-Salmon.jpg */; };
+		CB2715A424B8FE5200DC7130 /* Lasagna.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB2715A124B8FE5200DC7130 /* Lasagna.jpg */; };
+		CB2715A524B8FE5200DC7130 /* SmoothSweet-Tea.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CB2715A224B8FE5200DC7130 /* SmoothSweet-Tea.jpeg */; };
+		CB2715AA24B8FE5B00DC7130 /* Parrothead-Salad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB2715A624B8FE5A00DC7130 /* Parrothead-Salad.jpg */; };
+		CB2715AB24B8FE5B00DC7130 /* Chocolate-Cupcake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB2715A724B8FE5A00DC7130 /* Chocolate-Cupcake.jpg */; };
+		CB2715AC24B8FE5B00DC7130 /* Broccoli-Salad.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CB2715A824B8FE5A00DC7130 /* Broccoli-Salad.jpeg */; };
+		CB2715AD24B8FE5B00DC7130 /* BlackMagic-Cake.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CB2715A924B8FE5B00DC7130 /* BlackMagic-Cake.jpeg */; };
 		CB316C7824B3AD49005F3603 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB316C7724B3AD49005F3603 /* MyTableViewController.swift */; };
 		CB316C7B24B3AEC4005F3603 /* FillDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB316C7A24B3AEC4005F3603 /* FillDatabase.swift */; };
 		CB316C8224B3B596005F3603 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB316C8124B3B596005F3603 /* RecipeModel.swift */; };
@@ -74,6 +81,13 @@
 		663101F6DC464309302B0934 /* Pods_Quick_Recipes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quick_Recipes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F620751E9AA06498F7B80FB /* Pods_Quick_RecipesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quick_RecipesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B7FC81D14BD2FACD7C3C1F /* Pods-Quick Recipes-Quick RecipesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Recipes-Quick RecipesUITests.release.xcconfig"; path = "Target Support Files/Pods-Quick Recipes-Quick RecipesUITests/Pods-Quick Recipes-Quick RecipesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CB2715A024B8FE5200DC7130 /* Grilled-Salmon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Grilled-Salmon.jpg"; sourceTree = "<group>"; };
+		CB2715A124B8FE5200DC7130 /* Lasagna.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lasagna.jpg; sourceTree = "<group>"; };
+		CB2715A224B8FE5200DC7130 /* SmoothSweet-Tea.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "SmoothSweet-Tea.jpeg"; sourceTree = "<group>"; };
+		CB2715A624B8FE5A00DC7130 /* Parrothead-Salad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Parrothead-Salad.jpg"; sourceTree = "<group>"; };
+		CB2715A724B8FE5A00DC7130 /* Chocolate-Cupcake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Chocolate-Cupcake.jpg"; sourceTree = "<group>"; };
+		CB2715A824B8FE5A00DC7130 /* Broccoli-Salad.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Broccoli-Salad.jpeg"; sourceTree = "<group>"; };
+		CB2715A924B8FE5B00DC7130 /* BlackMagic-Cake.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "BlackMagic-Cake.jpeg"; sourceTree = "<group>"; };
 		CB316C7724B3AD49005F3603 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		CB316C7A24B3AEC4005F3603 /* FillDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillDatabase.swift; sourceTree = "<group>"; };
 		CB316C8124B3B596005F3603 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
@@ -126,6 +140,13 @@
 		2D66700624B4F9A000A82BD0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CB2715A924B8FE5B00DC7130 /* BlackMagic-Cake.jpeg */,
+				CB2715A824B8FE5A00DC7130 /* Broccoli-Salad.jpeg */,
+				CB2715A724B8FE5A00DC7130 /* Chocolate-Cupcake.jpg */,
+				CB2715A624B8FE5A00DC7130 /* Parrothead-Salad.jpg */,
+				CB2715A024B8FE5200DC7130 /* Grilled-Salmon.jpg */,
+				CB2715A124B8FE5200DC7130 /* Lasagna.jpg */,
+				CB2715A224B8FE5200DC7130 /* SmoothSweet-Tea.jpeg */,
 				2D66701B24B5074E00A82BD0 /* ic_access_time_18pt.png */,
 				2D66701924B5074200A82BD0 /* ic_people_12pt_2x.png */,
 				2D66701324B4FCA100A82BD0 /* chicken-parmesan.jpeg */,
@@ -197,6 +218,7 @@
 				CB55917924B24B5A00D9D1C2 /* SceneDelegate.swift */,
 				CB55917B24B24B5A00D9D1C2 /* ViewController.swift */,
 				CB316C7724B3AD49005F3603 /* MyTableViewController.swift */,
+				CB58A57D24B6528200A43943 /* RecipeViewController.swift */,
 				CB55917D24B24B5A00D9D1C2 /* Main.storyboard */,
 				CB55918024B24B5B00D9D1C2 /* Assets.xcassets */,
 				CB55918224B24B5B00D9D1C2 /* LaunchScreen.storyboard */,
@@ -204,7 +226,6 @@
 				CB316C8324B3BD88005F3603 /* testController.swift */,
 				2D66701524B4FFEC00A82BD0 /* MyTableViewCell.swift */,
 				2D66701624B4FFEC00A82BD0 /* MyTableViewCell.xib */,
-				CB58A57D24B6528200A43943 /* RecipeViewController.swift */,
 			);
 			path = "Quick Recipes";
 			sourceTree = "<group>";
@@ -350,15 +371,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D66701C24B5074F00A82BD0 /* ic_access_time_18pt.png in Resources */,
+				CB2715AB24B8FE5B00DC7130 /* Chocolate-Cupcake.jpg in Resources */,
+				CB2715A524B8FE5200DC7130 /* SmoothSweet-Tea.jpeg in Resources */,
 				2D66701424B4FCA100A82BD0 /* chicken-parmesan.jpeg in Resources */,
 				CB55918424B24B5B00D9D1C2 /* LaunchScreen.storyboard in Resources */,
 				2D66700E24B4FA5800A82BD0 /* icon_drinks.png in Resources */,
 				2D66701A24B5074200A82BD0 /* ic_people_12pt_2x.png in Resources */,
+				CB2715AA24B8FE5B00DC7130 /* Parrothead-Salad.jpg in Resources */,
 				2D66700D24B4FA5800A82BD0 /* icon_healthy.png in Resources */,
 				2D66700F24B4FA5800A82BD0 /* icon_main_dishes.png in Resources */,
 				CB55918124B24B5B00D9D1C2 /* Assets.xcassets in Resources */,
 				2D66701824B4FFEC00A82BD0 /* MyTableViewCell.xib in Resources */,
+				CB2715A324B8FE5200DC7130 /* Grilled-Salmon.jpg in Resources */,
 				2D66701024B4FA5800A82BD0 /* icon_desserts.png in Resources */,
+				CB2715A424B8FE5200DC7130 /* Lasagna.jpg in Resources */,
+				CB2715AD24B8FE5B00DC7130 /* BlackMagic-Cake.jpeg in Resources */,
+				CB2715AC24B8FE5B00DC7130 /* Broccoli-Salad.jpeg in Resources */,
 				2D66700C24B4FA5800A82BD0 /* background_main.png in Resources */,
 				CB55917F24B24B5A00D9D1C2 /* Main.storyboard in Resources */,
 				2D66701224B4FC8000A82BD0 /* french-chicken.jpeg in Resources */,

@@ -12,6 +12,8 @@ import RealmSwift
 class MyTableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
     @IBOutlet weak var myTableView: UITableView!
+    
+    var recievedCategory=""
     var sentName=""
     var config = Realm.Configuration(
                // Set the new schema version. This must be greater than the previously used
@@ -64,8 +66,9 @@ class MyTableViewController: UIViewController,UITableViewDelegate,UITableViewDat
   
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title=recievedCategory
         let realm = try! Realm(configuration: config)
-        recipes=realm.objects(Recipe.self)
+        recipes=realm.objects(Recipe.self).filter("category contains '"+recievedCategory+"'")
         myTableView.register(MyTableViewCell.nib(), forCellReuseIdentifier: MyTableViewCell.identifier)
         myTableView.delegate=self
         myTableView.dataSource=self

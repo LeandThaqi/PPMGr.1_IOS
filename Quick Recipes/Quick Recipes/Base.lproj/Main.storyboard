@@ -24,6 +24,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="150"/>
                                 <state key="normal" title="Desserts" backgroundImage="icon_desserts.png"/>
+                                <connections>
+                                    <action selector="dessertsBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fud-bw-X67"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Rm-v9-xiR">
                                 <rect key="frame" x="232" y="587" width="140" height="140"/>
@@ -34,6 +37,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="150"/>
                                 <state key="normal" title="Drinks" backgroundImage="icon_drinks.png"/>
+                                <connections>
+                                    <action selector="drinksBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jkl-Kx-wWG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9W-Ap-58H">
                                 <rect key="frame" x="232" y="396" width="135" height="135"/>
@@ -44,6 +50,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="130"/>
                                 <state key="normal" title="Healthy" backgroundImage="icon_healthy.png"/>
+                                <connections>
+                                    <action selector="healthyBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yCJ-BU-AzM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Se-uA-dtW">
                                 <rect key="frame" x="43" y="381" width="150" height="150"/>
@@ -55,9 +64,7 @@
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="90"/>
                                 <state key="normal" title="Main Dishes" backgroundImage="icon_main_dishes.png"/>
                                 <connections>
-                                    <action selector="mainDishBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hHz-pZ-c9e"/>
-                                    <action selector="shkoTe2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7WB-BW-f4K"/>
-                                    <segue destination="4j9-yC-fZw" kind="show" identifier="showTableView" id="Xef-Jb-xrx"/>
+                                    <action selector="mainDishesBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sfd-gE-uRW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -77,7 +84,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="ncV-LT-8i7"/>
                     <navigationItem key="navigationItem" id="YfL-nH-h0Z"/>
                     <connections>
-                        <outlet property="mainDishBtn" destination="1Se-uA-dtW" id="jxr-69-cm0"/>
+                        <segue destination="4j9-yC-fZw" kind="show" identifier="showTableView" id="SBA-2R-odd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -121,7 +128,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="U8N-qB-JSj" kind="modal" identifier="fromCellToRecipe" modalPresentationStyle="fullScreen" id="Zsj-Qs-lsT"/>
+                                            <segue destination="U8N-qB-JSj" kind="modal" identifier="fromCellToRecipe" modalPresentationStyle="pageSheet" id="Zsj-Qs-lsT"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -150,7 +157,7 @@
             <objects>
                 <viewController id="U8N-qB-JSj" customClass="RecipeViewController" customModule="Quick_Recipes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rCQ-az-nAK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qjz-Bi-5vF">
@@ -264,6 +271,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="02t-DK-T4d"/>
                     </view>
+                    <navigationItem key="navigationItem" id="8dZ-HF-utc"/>
                     <connections>
                         <outlet property="imageViewFood" destination="kYa-iF-8kB" id="EjX-s7-LrT"/>
                         <outlet property="imageViewPersons" destination="HWV-xy-SQI" id="z3M-QY-jYo"/>

@@ -9,6 +9,8 @@
 import UIKit
 import RealmSwift
 class ViewController: UIViewController {
+    
+    var sentCategory=""
    
     var config = Realm.Configuration(
                // Set the new schema version. This must be greater than the previously used
@@ -27,9 +29,6 @@ class ViewController: UIViewController {
            })
     
   
-    @IBAction func mainDishBtn(_ sender: Any) {
-        performSegue(withIdentifier: "showTableView", sender: self)
-    }
     
     var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
@@ -40,6 +39,9 @@ class ViewController: UIViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController!.navigationBar.shadowImage = UIImage()
+        self.navigationController!.navigationBar.isTranslucent = true
          let realm = try! Realm(configuration: config)
         //FillDatabase().fillDatabase()
        // print(realm.configuration.fileURL)
@@ -51,9 +53,32 @@ class ViewController: UIViewController {
             imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])        // Do any additional setup after loading the view.
     }
+    
 
-
+    @IBAction func mainDishesBtn(_ sender: UIButton) {
+        sentCategory="MainDishes"
+        performSegue(withIdentifier: "showTableView", sender: self)
+    }
     
     
+    
+    @IBAction func healthyBtn(_ sender: UIButton) {
+        sentCategory="Healthy"
+        performSegue(withIdentifier: "showTableView", sender: self)
+    }
+    
+    @IBAction func dessertsBtn(_ sender: UIButton) {
+        sentCategory="Desserts"
+        performSegue(withIdentifier: "showTableView", sender: self)
+    }
+    
+    @IBAction func drinksBtn(_ sender: UIButton) {
+        sentCategory="Drinks"
+        performSegue(withIdentifier: "showTableView", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC=segue.destination as! MyTableViewController
+        nextVC.recievedCategory=sentCategory
+    }
 }
 
