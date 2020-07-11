@@ -1,15 +1,15 @@
 //
-//  RecipeModel.swift
+//  FavoriteModel.swift
 //  Quick Recipes
 //
-//  Created by Leand Thaqi on 6.7.20.
+//  Created by Egzona Grashtica on 11.7.20.
 //  Copyright © 2020 Leand Thaqi. All rights reserved.
 //
 
 import Foundation
 import RealmSwift
 
-class Recipe: Object {
+class Favorite: Object {
     @objc dynamic var name=""
     @objc dynamic var imagePath=""
     @objc dynamic var ingredients=""
@@ -17,6 +17,4 @@ class Recipe: Object {
     @objc dynamic var timeNeeded=""
     @objc dynamic var persons=""
     @objc dynamic var category=""
-    @objc dynamic var isFavorite=false
 }
-	

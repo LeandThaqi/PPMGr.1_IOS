@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quick_Recipes" customModuleProvider="target" sceneMemberID="viewController">
@@ -81,7 +81,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ncV-LT-8i7"/>
+                    <tabBarItem key="tabBarItem" title="Home" selectedImage="house" catalog="system" id="ncV-LT-8i7"/>
                     <navigationItem key="navigationItem" id="YfL-nH-h0Z"/>
                     <connections>
                         <segue destination="4j9-yC-fZw" kind="show" identifier="showTableView" id="SBA-2R-odd"/>
@@ -102,11 +102,12 @@
                     </tabBar>
                     <connections>
                         <segue destination="yI4-ZE-FXg" kind="relationship" relationship="viewControllers" id="eFT-Ms-i7k"/>
+                        <segue destination="YBC-dt-dnd" kind="relationship" relationship="viewControllers" id="lP8-wY-LX4"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M9y-mQ-zHe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1038" y="-644"/>
+            <point key="canvasLocation" x="-45" y="400"/>
         </scene>
         <!--My Table View Controller-->
         <scene sceneID="AVz-bA-CbF">
@@ -257,6 +258,15 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAf-dn-Iw2">
+                                        <rect key="frame" x="366" y="178" width="37" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                        <state key="normal" image="Heart.png"/>
+                                        <connections>
+                                            <action selector="setFavorite:" destination="U8N-qB-JSj" eventType="touchUpInside" id="QIB-61-jwe"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Wum-IB-jPk"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="OcN-xs-Of2"/>
@@ -273,6 +283,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="8dZ-HF-utc"/>
                     <connections>
+                        <outlet property="btnFavorite" destination="cAf-dn-Iw2" id="PIK-zv-D3L"/>
                         <outlet property="imageViewFood" destination="kYa-iF-8kB" id="EjX-s7-LrT"/>
                         <outlet property="imageViewPersons" destination="HWV-xy-SQI" id="z3M-QY-jYo"/>
                         <outlet property="imageViewTime" destination="ltl-oy-1gC" id="W6p-2q-OUB"/>
@@ -287,27 +298,43 @@
             </objects>
             <point key="canvasLocation" x="4010.144927536232" y="91.741071428571431"/>
         </scene>
-        <!--Item-->
+        <!--Favorites-->
         <scene sceneID="QVJ-02-Zn8">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="YBC-dt-dnd" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="YBC-dt-dnd" customClass="FavoriteTableViewController" customModule="Quick_Recipes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f4M-W5-ck0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eq9-rT-eKi">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eq9-rT-eKi" firstAttribute="top" secondItem="Zk4-dA-osH" secondAttribute="top" id="KSo-kF-EXm"/>
+                            <constraint firstItem="Zk4-dA-osH" firstAttribute="trailing" secondItem="eq9-rT-eKi" secondAttribute="trailing" id="kzP-cS-zp7"/>
+                            <constraint firstItem="Zk4-dA-osH" firstAttribute="bottom" secondItem="eq9-rT-eKi" secondAttribute="bottom" id="qwK-Id-qgF"/>
+                            <constraint firstItem="eq9-rT-eKi" firstAttribute="leading" secondItem="Zk4-dA-osH" secondAttribute="leading" id="udQ-Ce-Sbs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Zk4-dA-osH"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="VDd-RE-kIj"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="heart" catalog="system" selectedImage="heart" id="VDd-RE-kIj"/>
+                    <navigationItem key="navigationItem" id="tEc-VK-R5N"/>
+                    <connections>
+                        <outlet property="FavoriteTableView" destination="eq9-rT-eKi" id="E21-hb-e9F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2hP-GY-2XL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5039.130434782609" y="91.741071428571431"/>
+            <point key="canvasLocation" x="977" y="796"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="CZu-0k-y6A">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yI4-ZE-FXg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="tng-xn-aS2"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house" id="tng-xn-aS2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="veW-qb-Cqj">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -324,6 +351,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Heart.png" width="36" height="36"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="house" catalog="system" width="128" height="110"/>
         <image name="icon_desserts.png" width="200" height="200"/>
         <image name="icon_drinks.png" width="100" height="100"/>
         <image name="icon_healthy.png" width="96" height="96"/>

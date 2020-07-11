@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     var config = Realm.Configuration(
                // Set the new schema version. This must be greater than the previously used
                // version (if you've never set a schema version before, the version is 0).
-               schemaVersion: 3,
+               schemaVersion: 4,
                
                // Set the block which will be called automatically when opening a Realm with
                // a schema version lower than the one set above
@@ -44,6 +44,7 @@ class ViewController: UIViewController {
         self.navigationController!.navigationBar.isTranslucent = true
          let realm = try! Realm(configuration: config)
         //FillDatabase().fillDatabase()
+       
        // print(realm.configuration.fileURL)
         view.insertSubview(imageView, at: 0)
         NSLayoutConstraint.activate([

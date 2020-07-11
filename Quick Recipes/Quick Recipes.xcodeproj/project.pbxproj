@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		089A98083BEB062AD1F131DD /* Pods_Quick_RecipesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F620751E9AA06498F7B80FB /* Pods_Quick_RecipesTests.framework */; };
+		2D50315F24BA48C000A40F0D /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D50315E24BA48C000A40F0D /* FavoriteTableViewController.swift */; };
+		2D50316324BA53D400A40F0D /* fillHeart.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D50316224BA53D400A40F0D /* fillHeart.png */; };
+		2D50316524BA545700A40F0D /* Heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D50316424BA545700A40F0D /* Heart.png */; };
 		2D66700C24B4FA5800A82BD0 /* background_main.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D66700724B4FA5600A82BD0 /* background_main.png */; };
 		2D66700D24B4FA5800A82BD0 /* icon_healthy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D66700824B4FA5700A82BD0 /* icon_healthy.png */; };
 		2D66700E24B4FA5800A82BD0 /* icon_drinks.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D66700924B4FA5700A82BD0 /* icon_drinks.png */; };
@@ -63,6 +66,9 @@
 /* Begin PBXFileReference section */
 		01387D83CC33C995B0F0AF9E /* Pods-Quick Recipes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quick Recipes.release.xcconfig"; path = "Target Support Files/Pods-Quick Recipes/Pods-Quick Recipes.release.xcconfig"; sourceTree = "<group>"; };
 		25F6D0B9FD77C90BF4C622C2 /* Pods_Quick_Recipes_Quick_RecipesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quick_Recipes_Quick_RecipesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D50315E24BA48C000A40F0D /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
+		2D50316224BA53D400A40F0D /* fillHeart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fillHeart.png; sourceTree = "<group>"; };
+		2D50316424BA545700A40F0D /* Heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Heart.png; sourceTree = "<group>"; };
 		2D66700724B4FA5600A82BD0 /* background_main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_main.png; sourceTree = "<group>"; };
 		2D66700824B4FA5700A82BD0 /* icon_healthy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_healthy.png; sourceTree = "<group>"; };
 		2D66700924B4FA5700A82BD0 /* icon_drinks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_drinks.png; sourceTree = "<group>"; };
@@ -140,6 +146,8 @@
 		2D66700624B4F9A000A82BD0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2D50316424BA545700A40F0D /* Heart.png */,
+				2D50316224BA53D400A40F0D /* fillHeart.png */,
 				CB2715A924B8FE5B00DC7130 /* BlackMagic-Cake.jpeg */,
 				CB2715A824B8FE5A00DC7130 /* Broccoli-Salad.jpeg */,
 				CB2715A724B8FE5A00DC7130 /* Chocolate-Cupcake.jpg */,
@@ -226,6 +234,7 @@
 				CB316C8324B3BD88005F3603 /* testController.swift */,
 				2D66701524B4FFEC00A82BD0 /* MyTableViewCell.swift */,
 				2D66701624B4FFEC00A82BD0 /* MyTableViewCell.xib */,
+				2D50315E24BA48C000A40F0D /* FavoriteTableViewController.swift */,
 			);
 			path = "Quick Recipes";
 			sourceTree = "<group>";
@@ -373,10 +382,12 @@
 				2D66701C24B5074F00A82BD0 /* ic_access_time_18pt.png in Resources */,
 				CB2715AB24B8FE5B00DC7130 /* Chocolate-Cupcake.jpg in Resources */,
 				CB2715A524B8FE5200DC7130 /* SmoothSweet-Tea.jpeg in Resources */,
+				2D50316324BA53D400A40F0D /* fillHeart.png in Resources */,
 				2D66701424B4FCA100A82BD0 /* chicken-parmesan.jpeg in Resources */,
 				CB55918424B24B5B00D9D1C2 /* LaunchScreen.storyboard in Resources */,
 				2D66700E24B4FA5800A82BD0 /* icon_drinks.png in Resources */,
 				2D66701A24B5074200A82BD0 /* ic_people_12pt_2x.png in Resources */,
+				2D50316524BA545700A40F0D /* Heart.png in Resources */,
 				CB2715AA24B8FE5B00DC7130 /* Parrothead-Salad.jpg in Resources */,
 				2D66700D24B4FA5800A82BD0 /* icon_healthy.png in Resources */,
 				2D66700F24B4FA5800A82BD0 /* icon_main_dishes.png in Resources */,
@@ -522,6 +533,7 @@
 				CB55917824B24B5A00D9D1C2 /* AppDelegate.swift in Sources */,
 				CB316C8424B3BD88005F3603 /* testController.swift in Sources */,
 				CB55917A24B24B5A00D9D1C2 /* SceneDelegate.swift in Sources */,
+				2D50315F24BA48C000A40F0D /* FavoriteTableViewController.swift in Sources */,
 				CB316C7824B3AD49005F3603 /* MyTableViewController.swift in Sources */,
 				CB316C7B24B3AEC4005F3603 /* FillDatabase.swift in Sources */,
 				CB316C8224B3B596005F3603 /* RecipeModel.swift in Sources */,
