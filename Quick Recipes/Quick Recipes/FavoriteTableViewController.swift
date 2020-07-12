@@ -52,7 +52,7 @@ class FavoriteTableViewController: UIViewController,UITableViewDelegate,UITableV
        
        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
            sentName=recipes[indexPath.row].name
-           //QITU DUHET ME NDREQQQQQQQQQ performSegue(withIdentifier: "fromCellToRecipe", sender: self)
+           performSegue(withIdentifier: "showFavoriteRecipe", sender: self)
        }
        
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -70,6 +70,13 @@ class FavoriteTableViewController: UIViewController,UITableViewDelegate,UITableV
         FavoriteTableView.dataSource=self
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let realm = try! Realm(configuration: config)
+        recipes = realm.objects(Recipe.self).filter("isFavorite == true")
+        FavoriteTableView.reloadData()
     }
     
 

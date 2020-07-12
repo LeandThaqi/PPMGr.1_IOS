@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController!.navigationBar.shadowImage = UIImage()
         self.navigationController!.navigationBar.isTranslucent = true
-         let realm = try! Realm(configuration: config)
+         //let realm = try! Realm(configuration: config)
         //FillDatabase().fillDatabase()
        
        // print(realm.configuration.fileURL)

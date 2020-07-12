@@ -24,6 +24,7 @@ class RecipeViewController: UIViewController {
     var isFavorite=false
     var receivedName=""
     var realm:Realm!
+    let alert = UIAlertController(title: "Warning", message: "Are you sure you want this recipe removed from Favorites?", preferredStyle: .alert)
     
     var recipe:Results<Recipe>!
     var config = Realm.Configuration(
@@ -60,6 +61,13 @@ class RecipeViewController: UIViewController {
         isFavorite=recipe[0].isFavorite
         setFavoriteImage()
         
+        alert.addAction(UIAlertAction(title: "Delete", style: .default, handler: { action in
+            self.deleteFavorite()
+        }))
+        alert.addAction(UIAlertAction(title:"Cancel",style: .default,handler: {action in
+            self.alert.dismiss(animated: true, completion: nil)
+            self.btnFavorite.isEnabled=true
+        }))
        
         
         // Do any additional setup after loading the view.
@@ -75,13 +83,7 @@ class RecipeViewController: UIViewController {
     @IBAction func setFavorite(_ sender: UIButton) {
         btnFavorite.isEnabled=false
         if(isFavorite){
-            try! realm.write{
-                recipe[0].isFavorite=false
-            }
-            isFavorite=false
-            setFavoriteImage()
-            btnFavorite.isEnabled=true
-            
+            self.present(alert, animated: true, completion: nil)
         }
         else{
             try! realm.write{
@@ -90,9 +92,43 @@ class RecipeViewController: UIViewController {
             isFavorite=true
             setFavoriteImage()
             btnFavorite.isEnabled=true
+            showToast(message: "This recipe has been added to Favorites!", font: .systemFont(ofSize: 12.0))
         }
         
     }
+    func deleteFavorite(){
+        try! realm.write{
+            recipe[0].isFavorite=false
+        }
+        isFavorite=false
+        setFavoriteImage()
+        btnFavorite.isEnabled=true
+    }
+    
+    func showToast(message : String, font: UIFont) {
+
+        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 125, y: self.view.frame.size.height-100, width: 250, height: 35))
+        toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        toastLabel.textColor = UIColor.white
+        toastLabel.font = font
+        toastLabel.textAlignment = .center;
+        toastLabel.text = message
+        toastLabel.alpha = 1.0
+        toastLabel.layer.cornerRadius = 10;
+        toastLabel.clipsToBounds  =  true
+        self.view.addSubview(toastLabel)
+        UIView.animate(withDuration: 5.0, delay: 0.1, options: .curveEaseOut, animations: {
+             toastLabel.alpha = 0.0
+        }, completion: {(isCompleted) in
+            toastLabel.removeFromSuperview()
+        })
+    }
+    
+  
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 

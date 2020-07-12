@@ -189,7 +189,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5OK-Bv-Dnh">
-                                        <rect key="frame" x="141" y="298" width="42" height="21"/>
+                                        <rect key="frame" x="141" y="298" width="69" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -324,11 +324,12 @@
                     <navigationItem key="navigationItem" id="tEc-VK-R5N"/>
                     <connections>
                         <outlet property="FavoriteTableView" destination="eq9-rT-eKi" id="E21-hb-e9F"/>
+                        <segue destination="U8N-qB-JSj" kind="modal" identifier="showFavoriteRecipe" modalPresentationStyle="pageSheet" id="fiN-cH-eQg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2hP-GY-2XL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="977" y="796"/>
+            <point key="canvasLocation" x="1467" y="834"/>
         </scene>
         <!--Home-->
         <scene sceneID="CZu-0k-y6A">
@@ -350,6 +351,9 @@
             <point key="canvasLocation" x="976.81159420289862" y="88.392857142857139"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="fiN-cH-eQg"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Heart.png" width="36" height="36"/>
         <image name="heart" catalog="system" width="128" height="109"/>
